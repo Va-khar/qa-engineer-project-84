@@ -4,10 +4,50 @@
     Google Chrome  13.0.5672.127 (Официальная сборка), (64 бит)
     ОС Windows 10
   steps-to-reproduce: |
-    1. Нажать "Language"
-    2. Выбрать "Russian"
-    3. Нажать на "Категория"
+    1. Открыта главная страница сайта https://hexlet-products-store.vercel.app/
+    2. Нажать "Language"
+    3. Выбрать "Russian"
+    4. Нажать на "Категория"
   expected-result: |
     Появиться список категорий на русском языке
   actual-result: |
     Появляеться список категорий на английском языке
+    
+- summary: |
+    Фильтр товара по цвету и размеру
+  environment: |
+    Google Chrome  13.0.5672.127 (Официальная сборка), (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта https://hexlet-products-store.vercel.app/
+  expected-result: |
+    Фильтр товара по цвету и размеру присутствует в функциональности сайта
+  actual-result: |
+    Фильтр товара по цвету и размеру отсутствует на сайте
+    
+- summary: |
+    Пользователь может авторизироваться на сайте 
+  environment: |
+    Google Chrome  13.0.5672.127 (Официальная сборка), (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Открыта главная страница сайта https://hexlet-products-store.vercel.app/
+  expected-result: |
+    Авторизация присутствует в функциональности сайта
+  actual-result: |
+    Авторизация на сайте отсутствует
+    
+- summary: |
+    Сайт должен иметь мобильную версию
+  environment: |
+    Google Chrome  13.0.5672.127 (Официальная сборка), (64 бит)
+    ОС Windows 10
+  steps-to-reproduce:
+    1. Открыта главная страница сайта https://hexlet-products-store.vercel.app/
+    2. Открыть DevTools
+    3. Нажать на "Toggle device toolbar"
+    4. Выбираем любой девайс
+  expected-result: |
+    Сайт имеет мобильную версию 
+  actual-result: |
+    Сайт не имеет мобильную версию 
