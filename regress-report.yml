@@ -1,0 +1,83 @@
+test-cases:
+  - summary: |
+      Правильное числовое обозначение над кнопкой "Корзина"
+    status: pass
+    
+  - summary: |
+      Добавление товара в корзину
+    status: pass
+    
+  - summary: |
+      Просмотр страницы "Корзина"
+    status: pass
+    
+  - summary: |
+      Смена языка сайта на русскоязычную версию
+    status: fail
+    
+  - summary: |
+      Просмотор товаров на странице
+    status: pass
+    
+  - summary: |
+      Перемещение внутри сайта с помощью конпок "Предыдущая" и "Следующая"
+    status: pass
+    
+  - summary: |
+      Просмотр подробной информации о товаре
+    status: pass
+    
+  - summary: |
+      При выборе определённой категории, отображаются соответствующие товары
+    status: pass
+    
+  - summary: |
+      Поиск по ключевому слову, работает правильно
+    status: pass
+    
+  - summary: |
+      Фильтр по цене работает правильно
+    status: pass
+    
+bugreportes:
+  - summary: |
+      Сайт должен иметь полный функционал в мобильной версии
+    environment: |
+      Google Chrome  13.0.5672.127 (Официальная сборка), (64 бит)
+      ОС Windows 10
+    steps-to-reproduce:
+      1. Открыта главная страница сайта https://hexlet-products-store.vercel.app/
+      2. Открыть DevTools
+      3. Нажать на "Toggle device toolbar"
+      4. Выбираем любой девайс
+    expected-result: |
+      Присутствует выбор категорий в мобильной версии
+    actual-result: |
+      Отсутствие выбора категорий в мобильной версии 
+    
+  - summary: |
+      Полный перевод сайта в русскоязычной версии
+    environment: |
+      Google Chrome  13.0.5672.127 (Официальная сборка), (64 бит)
+      ОС Windows 10
+    steps-to-reproduce: |
+      1. Открыта главная страница сайта https://hexlet-products-store.vercel.app/
+      2. Нажать "Language"
+      3. Выбрать "Russian"
+      4. Нажать на "Категория"
+    expected-result: |
+      Появиться список категорий на русском языке
+    actual-result: |
+      Появляеться список категорий на английском языке
+      
+ - summary: |
+     Фильтр товара по цвету и размеру
+   environment: |
+     Google Chrome  13.0.5672.127 (Официальная сборка), (64 бит)
+     ОС Windows 10
+   steps-to-reproduce: |
+     1. Открыта главная страница сайта https://hexlet-products-store.vercel.app/
+   expected-result: |
+     Фильтр товара по цвету и размеру присутствует в функциональности сайта
+   actual-result: |
+     Фильтр товара по цвету и размеру отсутствует на сайте
