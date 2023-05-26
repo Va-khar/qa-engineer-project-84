@@ -39,7 +39,7 @@ test-cases:
       Фильтр по цене работает правильно
     status: pass
     
-bugreportes:
+bugreports:
   - summary: |
       Сайт должен иметь полный функционал в мобильной версии
     environment: |
