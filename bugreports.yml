@@ -59,7 +59,7 @@
   environment: |
     Google Chrome  13.0.5672.127 (Официальная сборка), (64 бит)
     ОС Windows 10
-  steps-toreproduce:
+  steps-to-reproduce:
     1. Открыта главная страница сайта https://hexlet-products-store.vercel.app/
     2. Смотрим на каталог товаров
   expected-result: |
@@ -72,7 +72,7 @@
   environment: |
     Google Chrome  13.0.5672.127 (Официальная сборка), (64 бит)
     ОС Windows 10
-  steps-toreproduce:
+  steps-to-reproduce:
     1. Открыта главная страница https://hexlet-products-store.vercel.app/
     2. Нажимаем на кнопку "В корзину", на любой карточке товара
     3. Нажимаем на кнопку "Корзина"
