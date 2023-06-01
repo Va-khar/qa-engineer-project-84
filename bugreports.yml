@@ -44,7 +44,7 @@
   environment: |
     Google Chrome  13.0.5672.127 (Официальная сборка), (64 бит)
     ОС Windows 10
-  steps-to-reproduce:
+  steps-to-reproduce: |
     1. Открыта главная страница сайта https://hexlet-products-store.vercel.app/
     2. Открыть DevTools
     3. Нажать на "Toggle device toolbar"
@@ -59,7 +59,7 @@
   environment: |
     Google Chrome  13.0.5672.127 (Официальная сборка), (64 бит)
     ОС Windows 10
-  steps-to-reproduce:
+  steps-to-reproduce: |
     1. Открыта главная страница сайта https://hexlet-products-store.vercel.app/
     2. Смотрим на каталог товаров
   expected-result: |
@@ -72,7 +72,7 @@
   environment: |
     Google Chrome  13.0.5672.127 (Официальная сборка), (64 бит)
     ОС Windows 10
-  steps-to-reproduce:
+  steps-to-reproduce: |
     1. Открыта главная страница https://hexlet-products-store.vercel.app/
     2. Нажимаем на кнопку "В корзину", на любой карточке товара
     3. Нажимаем на кнопку "Корзина"
@@ -82,6 +82,20 @@
     Появляется окно "Заказ успешно оформлен"
   actual-result: |
     Появляется окно "Заказ успешно формлен"
+    
+- summary: |
+    Отключенный фильтр в наличии выводит на страницу "Ничего не найдено!"
+  environment: |
+    Google Chrome  13.0.5672.127 (Официальная сборка), (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Открыта главная страница https://hexlet-products-store.vercel.app/
+    2. Прокручиваем вниз страницу
+    3. Отключаем фильтр в наличии
+  expected-result: |
+    При использовании функционала сайта, где идёт отображение товара на странице, будет предоставлен весь товар
+  actual-result: |
+    На страницу выводится "Ничего не найдено!"
   
     
   
